@@ -313,10 +313,12 @@ ul{
 @media ( max-width: 767px ){
     .services .services-content{
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        margin: 0 auto 0;
+        margin: auto;
         text-align: center;
-        width: 500px;
+        
     }
 }
 
@@ -436,6 +438,12 @@ padding-bottom: var(--section-padding);
     justify-content: center;
 
 }
+@media(max-width:767px){
+    .portfolio .shuffle{
+       display: flex;
+       gap:10px;
+    }
+}
 .portfolio .shuffle li{
     font-size: 20px;
     padding: 10px;
@@ -459,8 +467,9 @@ padding-bottom: var(--section-padding);
 }
 
 .portfolio .imgs-container .box:hover .caption{
-    position: absolute;
-    bottom: 0;
+        position: absolute;
+        bottom: 0;
+        
 }
 
 .portfolio .imgs-container .box:hover img{
@@ -1011,6 +1020,13 @@ border-radius: 50%;
     display: flex;
     justify-content: space-between;
 } 
+@media (max-width: 768px) {
+    .contact .container .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+}
 .contact .container .content form{
     display: flex;
     flex-direction: column;
